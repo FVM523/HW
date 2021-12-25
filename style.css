@@ -98,12 +98,12 @@ nav img{
     line-height: 22px;
     padding: 10px;
 }
-.row{
+.ro{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
-.row .course-col{
+.course-col{
     flex-basis: 30%;
     background: #f5beb4;
     border-radius: 10px;
@@ -116,31 +116,107 @@ nav img{
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(20, 20, 20, 0.2);
 }
+/* Style Section Course */
 @media(max-width : 700px){
     .row{
         flex-direction: column;
     }
 }
-/* ---------------------campus---------------------      */
-.campus {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
+.row{
+    position: relative;
+    
+    }
+.walo{
+   
+        display: flex;
+        justify-content: space-between;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px
+    }
+.overlay {
+      position: absolute;
+      text-align: center;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 66% ;
+     width: 0;
+      height: 300px;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translate(-5%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+      background: #b3b9bb;
+    }
+.overlay a:link{ 
+        text-decoration: none;
+        color:white ;
+      
+    }
+      
+.overlay  a:visited {
+        text-decoration: none;
+        color: white;
+      }
+      
+.overlay  a:hover {
+        text-decoration: none;
+        color:#f5beb4;
+      }
+      
+.overlay   a:active {
+        text-decoration: none;
+        color: #f5beb4;
+      }
 
-.campus-col { 
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: static;
-    overflow: hidden;
-}
-.campus-col img{
-    width: 80%;
-    height: 80%;
-    display: inline;
-}
+.row:hover .overlay {
+         opacity: 1;
+         width : 250px ; 
+      }
+      
+      .text {
+        white-space: nowrap; 
+        color: white;
+        font-size: 20px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }  
+    
+    .campus {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .campus-col { 
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        position:relative;
+        overflow: hidden;
+    }
+    .campus-col img{
+        width : 250px ;
+        height: 300px;
+        
+    }
+    
+    .titre{
+        font-size: 62px;
+        text-align: center;
+        color: #6f8d7a;
+        font-family:  Brush Script MT;
+    }
 /*----------------footer------------------*/
 footer{
     background:#f5beb4;
@@ -214,7 +290,7 @@ form {
 #container h1{
     width: 38%;
     margin: 0 auto;
-    padding-bottom: 10px;
+padding-bottom: 10px;
 }
 
 /* Full-width inputs */
@@ -250,33 +326,30 @@ a:link {
     
   }
   
-  a:visited {
+a:visited {
     text-decoration: none;
-    color: #739680;
+    color: #7a9b59;
   }
   
-  a:hover {
+a:hover {
     text-decoration: none;
     color:#9BC472;
   }
   
-  a:active {
+a:active {
     text-decoration: none;
     color: #9BC472;
   }
 /* Set a style for text color */
-  .police{
+  .police1{
       color: #6f8d7a;
       font-family:  Brush Script MT;
+      text-align: justify;
       
   }
 /* Set a style for images */
 
-article{
-    margin-left: 200px;
-    margin-top: 20px;
-   
-}
+
 .arc{
     border-radius: 8px;
 }
@@ -298,6 +371,32 @@ article{
   align-items: center;
   
 }
+
+.grid-container {
+    column-gap: 1.5rem;
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+ .grid {
+      width: 300px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      border: solid 2px black;
+      padding: 8px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+ }
+      p{
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+       
+      }
+    
+  
+
 /* Set a style for scrollbar */
 body::-webkit-scrollbar {
     width: 9px;
@@ -336,4 +435,4 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #cdffde ;
   }
 
-
+  
