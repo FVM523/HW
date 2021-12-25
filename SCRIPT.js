@@ -17,6 +17,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -49,4 +55,14 @@ function checkCookie() {
       setCookie("username", user, 365);
     }
   }
+}
+// Formulaire
+function validateEmail(champsText){
+  var Email = document.getElementById('nc_mail').value;
+  const pattern = /\S+\@\S+\.\S/;
+  var champsText = true;
+  if(pattern.test(Email)== false){
+      alert('ce que vous avez saisi ne ressemble pas à une adresse e-mail valide!!');
+  }
+  return champsText;
 }
