@@ -174,7 +174,7 @@ nav img{
       padding-right: 1em;
       padding-top: 66% ;
      width: 0;
-      height: 300px;
+      height: 350px;
       top: 50%;
       left: 50%;
       opacity: 0;
@@ -239,8 +239,8 @@ nav img{
         overflow: hidden;
     }
     .campus-col img{
-        width : 250px ;
-        height: 300px;
+        width : 280px ;
+        height: 350px;
         
     }
     
