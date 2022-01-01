@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Sogeu IU",Arial, Helvetica, sans-serif;
+    font-family: "Sogeu IU" Arial, Helvetica, sans-serif;
 }
 .cook2 h3 {
     position: relative;
@@ -132,6 +132,7 @@ nav img{
     padding: 10px;
 }
 .ro{
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -150,13 +151,14 @@ nav img{
 }
 /* Style Section Course */
 @media(max-width : 700px){
-
     .row{
         flex-direction: column;
-        position: relative;
     }
 }
-
+.row{
+    position: relative;
+    
+    }
 .walo{
    
         display: flex;
@@ -171,8 +173,8 @@ nav img{
       padding-left: 1em;
       padding-right: 1em;
       padding-top: 66% ;
-      width: 0;
-      height: 350px;
+     width: 0;
+      height: 300px;
       top: 50%;
       left: 50%;
       opacity: 0;
@@ -211,7 +213,7 @@ nav img{
       }
       
       .text {
-        white-space: normal; 
+        white-space: nowrap; 
         color: white;
         font-size: 20px;
         position: -webkit-sticky;
@@ -220,7 +222,6 @@ nav img{
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        text-align: center;
       }  
     
     .campus {
@@ -232,12 +233,13 @@ nav img{
     
     .campus-col { 
         flex-basis: 32%;
+        border-radius: 10px;
         margin-bottom: 1em;
         position:relative;
         overflow: hidden;
     }
     .campus-col img{
-        width : 280px ;
+        width : 250px ;
         height: 300px;
         
     }
