@@ -6,6 +6,7 @@
     <title>S'inscrire</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="SCRIPT.js"></script>
 </head>
 <body>
   <button onclick="topFunction()" id="back2Top" title="Go to top">Top</button>
@@ -32,52 +33,47 @@
       </h1>
     </div>
     </section>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='https://fvm523.github.io/HW/';}"></iframe>
-        <form id="container" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTXbc3esVAJrRvDKXmSX8o-B4qAa33mlwqCrzeIhtmOd9R0Q/formResponse"
-        target="hidden_iframe" onsubmit="submitted=true">
+    <form id="container" method="post">
             
-              <label >
-                Nom d'utilisateur:
-              </label>
-              <div class="col-lg-9 col-sm-9">
-                <input type="text" class="form-control" id="nc_utilisateur" name="entry.992140872">
-                
-              </div>
-              <div id="container">
-            
-               <label >Prénom:</label>
-                 <input type="text" class="form-control" id="nc_prenom" name="entry.424895732"
-                 >
-               </div>
-              
-              <div id="container">
-                <label for="nc_nom" class="col-sm-1 control-label">Nom:</label>
-                <div class="col-lg-4 col-sm-4">
-                  <input type="text" class="form-control" id="nc_nom" name="entry.614127148"
-                  >
-                  
-                </div>
-              
+      <label >
+        Nom d'utilisateur:
+      </label>
+      <div class="col-lg-9 col-sm-9">
+        <input type="text" class="form-control" id="nc_utilisateur" required>
+        
+      </div>
+      <div id="container">
+    
+       <label >Prénom:</label>
+         <input type="text" class="form-control" id="nc_prenom">
+       </div>
+      
+      <div id="container">
+        <label for="nc_nom" class="col-sm-1 control-label">Nom:</label>
+        <div class="col-lg-4 col-sm-4">
+          <input type="text" class="form-control" id="nc_nom">
+          
+        </div>
+      
+   
+        <div id="container">
+    
+           <label>Email:</label>
+      
+           <input type="text" class="form-control" id="nc_mail"  onclick="validateEmail()">
+      </div>
+   
+        <div id="container">
+    
+           <label >Mot de passe:</label>
+        
+           <input type="password" class="form-control" id="nc_password" required>
            
-                <div id="container">
-            
-                   <label>Email:</label>
-              
-                   <input type="text" class="form-control" id="nc_mail" name="entry.1958822937"
-                     >
-              </div>
-           
-                <div id="container">
-            
-                   <label >Mot de passe:</label>
-                
-                   <input type="password" class="form-control" id="nc_password" name="entry.490256360">
-                   
-                   <input type="submit" id='submit' value='créer' >
-              </div>
-            
-          </div>
-        </form><br><br><br>
+           <input   type="submit" id='submit' value='créer' >
+      </div>
+    
+  </div>
+</form><br><br><br>
           <footer>
             <div class="footer-content">
               <h4 > Faites-le vous-même</h4>
